@@ -1,0 +1,252 @@
+/** todo: 
+  * split flex values to separate class
+  * tidy up inputs
+  * add class to disabled submit button
+  * divide code to separate files
+**/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 10px;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.formContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 0;
+}
+.header {
+  width: 100%;
+  height: 7vh;
+  background: #355990;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.header p {
+  margin-left: 1em;
+  font-size: 3em;
+  font-weight: 400;
+}
+.sectionContainer {
+  width: 100%;
+  margin: 1em;
+  padding: 2em 4em 0em;
+  box-shadow: 2px 2px 25px -6px rgba(0,0,0,0.2);
+}
+.sectionTitle {
+  font-size: 2em;
+  color: #355990;
+  font-weight: 400;
+}
+.sectionUnderline {
+  height: 1px;
+  display: flex;
+  border-bottom: 1px solid lightgray;
+  margin: 1em 0;
+  width: 100%;
+}
+.formPosition {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 3em;
+  margin: 3em 0;
+}
+.formPosition>div:first-child {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.formPosition>div:first-child p {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  color: #355990;
+}
+.formPosition>div:first-child span {
+  color: red;
+  font-size: 1.2em;
+}
+.formPosition>div:nth-child(2) {
+  height: 100%;
+  width: 60%;
+}
+.titleInput {
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+}
+textarea {
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+  outline: 0;
+}
+.annotation {
+  color: lightgray;
+  font-size: 1em;
+  font-style: italic;
+  margin: .2em 0;
+}
+.radioContainer {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.radioContainer>p {
+  margin-left: 1em;
+  font-size: 1.2em;
+}
+label {
+  white-space: nowrap;
+  font-size: 1.2em;
+  margin-right: 2em;
+  display: flex;
+  align-items: center;
+}
+input[type=radio] {
+  margin-right: .5em;
+  outline: 0;
+}
+.rewardContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.rewardContainer p {
+  font-size: 1.2em;
+  white-space: nowrap;
+  margin-left: .5em;
+}
+.rewardContainer button{
+  padding: .8em;
+  background: none;
+  margin-right: 1em;
+  color: lightgray;
+  font-size: 1.2em;
+}
+select {
+  width: 100%;
+  height: 100%;
+  background: none;
+  outline: 0;
+}
+input[type=email], input[type=text] {
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+  outline: 0;
+}
+.startsOnContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.startsOnContainer p{
+  font-size: 1.2em;
+  margin: 1em;
+}
+input[type=date], input[type=time] {
+  height: 100%;
+  text-align: center;
+  color: lightgray;
+  outline: 0;
+}
+input[type=date] {
+  width: 30%;
+}
+input[type=time] {
+  width: 20%;
+}
+.startsOnContainer label{
+  font-size: 1.2em;
+  margin: 0 1em;
+}
+button[type=submit] {
+  font-size: 1.2em;
+  padding: 1.2em;
+  text-transform: uppercase;
+  background: orange;
+  color: white;
+}
+input[name=duration] {
+  width: 40%;
+  height: 100%;
+  margin-right: 1em;
+  outline: 0;
+}
+.durationContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.durationContainer p {
+  font-size: 1.2em;
+}
+.descAnnotations {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.successContainer {
+  width: 100%;
+  padding: 2em 4em;
+  box-shadow: 2px 2px 25px -6px rgba(0,0,0,0.2);
+  display: flex;
+  align-self: flex-start;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  background: lightgreen;
+}
+.successContainer h2 {
+  font-size: 1.5em;
+  color: green;
+  margin-bottom: .5em;
+}
+.successContainer p {
+  font-size: 1.2em
+}
+.buttonWrapper {
+  width: 100%;
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+}
+.validContainer {
+  padding: .5em 1em;
+  color: white;
+  background: red;
+}
+.arrowLeft {
+  width: 0; 
+  height: 0; 
+  margin-left: .5em;
+  border-top: .5em solid transparent;
+  border-bottom: .5em solid transparent; 
+  border-right: .5em solid red; 
+}
+.invalid {
+  border: 1px solid red;
+}
